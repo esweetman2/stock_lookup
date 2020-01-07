@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Stock App</title>
+</head>
+
+<body>
+
+
+    <div class="overlay">
+        <h1>Welcome!</h1>'
+        <div class="paragraph-wrapper1 card">
+            <p class="welcome-paragraph" id="info1">This App lets you search any Stock, Bond, ETF that you'd like.</p>
+        </div>
+        <div class="paragraph-wrapper2 card">
+            <p class="welcome-paragraph" id="info2">Build your own portfolio to test your portfolio building.</p>
+        </div>
+        <div class="paragraph-wrapper3 card">
+            <p class="welcome-paragraph" id="info3">Click below to get started!</p>
+        </div>
+        <button class="start">START</button>
+    </div>
+
+
+
+    <div class="search-stock">
+        <div class="title-of-app">
+            <p class="title-letter" id="letter1">S</p>
+            <p class="title-letter" id="letter2">t</p>
+            <p class="title-letter" id="letter3">o</p>
+            <p class="title-letter" id="letter4">c</p>
+            <p class="title-letter" id="letter5">k</p>
+            <p class="title-letter" id="letter6">A</p>
+            <p class="title-letter" id="letter7">P</p>
+            <p class="title-letter" id="letter8">P</p>
+        </div>
+
+
+        <form action="" class="form">
+            <input class="enter-stock" id="stock" type="text" placeholder="Find Stock...">
+            <input class="find-btn" id="findBtn" type="button" value="Find">
+        </form>
+
+
+        <div class="buttons">
+            <button class="addTenDayMovingAverage">+ 10 Day SMA</button>
+            <button class="addFiftyDayMovingAverage">+ 50 Day SMA</button>
+        </div>
+        <div class="error">
+            <p></p>
+        </div>
+        <div class="container">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+        <!-- <button class="open-portfolio">View Portfolio</button> -->
+        <div class="portfolio-container">
+            <h2 class="portfolio-heading">Portfolio</h2>
+            <div class='total-assets'>
+                <ul>
+                    <li class='total-amount'>Total AUM: </li>
+                    <li class='sum'>$0</li>
+                </ul>
+            </div>
+
+            <div class="add-to-portfolio">
+                <form action="" class="form-portfolio">
+                    <input class="portfolio-stock" type="text" placeholder="Select Ticker...">
+                    <input class="shares" type="number" placeholder="Enter Number of Shares">
+                    <input class="add-btn" type="button" value="BUY">
+                </form>
+            </div>
+            <div class="portfolio-error">
+                <p>Sorry Try Another Ticker</p>
+            </div>
+            <div class="portfolio-list">
+                <ul class="portfolio-headers">
+                    <li class="header">Stock</li>
+                    <li class="header">Shares</li>
+                    <li class="header">Price</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./dist/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/ScrollToPlugin.min.js"></script>
+    <script src="gsap.js"></script>
+
+</body>
+
+</html>
