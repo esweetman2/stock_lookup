@@ -1,4 +1,4 @@
-const API_KEY = 'LWAKDFA9XAQLIEGF';
+const API_KEY = '';
 const findBtn = document.querySelector('#findBtn');
 const stock = document.querySelector("#stock");
 const errorOutput = document.querySelector(".error p");
