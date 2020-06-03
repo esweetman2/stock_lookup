@@ -3,6 +3,9 @@ const startBtn = document. querySelector(".start");
 const line = document.querySelectorAll("line");
 const portfolioBtn = document.querySelector(".open-portfolio");
 const addToPortfolio = document.querySelector(".add-to-portfolio");
+let chart = document.getElementById("chart").getContext('2d');
+
+
 
 
 gsap.from(".start",{opacity: 0,y: 500, duration: 1.2});
